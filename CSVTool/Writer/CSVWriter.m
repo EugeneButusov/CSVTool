@@ -64,4 +64,12 @@
     return [result copy];
 }
 
+-(void)writeToFile:(NSString *)file {
+    NSError *error;
+    [[self write] writeToFile:file atomically:YES encoding:NSUTF8StringEncoding error:&error];
+    if (error) {
+        @throw error;
+    }
+}
+
 @end
