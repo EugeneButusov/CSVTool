@@ -10,6 +10,10 @@
 		2B0C64D71E1673B30063AEA9 /* CSVTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0C64CD1E1673B30063AEA9 /* CSVTool.framework */; };
 		2B0C64DC1E1673B30063AEA9 /* CSVToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0C64DB1E1673B30063AEA9 /* CSVToolTests.m */; };
 		2B0C64DE1E1673B30063AEA9 /* CSVTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B0C64D01E1673B30063AEA9 /* CSVTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A68150B9BE7C8326166227DB /* CSVReader.h in Headers */ = {isa = PBXBuildFile; fileRef = A6815FC6B36F44910B337499 /* CSVReader.h */; };
+		A681539E1BC19F5A907E4E0C /* CSVWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = A6815BA19A4AFD8FE233413C /* CSVWriter.m */; };
+		A681558F37865A8E8E31C4AF /* CSVReader.m in Sources */ = {isa = PBXBuildFile; fileRef = A6815A49C7997880AC757F05 /* CSVReader.m */; };
+		A6815C33CC6DCCA0476B66F5 /* CSVWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = A6815719A4ABFF425E523A91 /* CSVWriter.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		2B0C64D61E1673B30063AEA9 /* CSVToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSVToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B0C64DB1E1673B30063AEA9 /* CSVToolTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSVToolTests.m; sourceTree = "<group>"; };
 		2B0C64DD1E1673B30063AEA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6815719A4ABFF425E523A91 /* CSVWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSVWriter.h; sourceTree = "<group>"; };
+		A6815A49C7997880AC757F05 /* CSVReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSVReader.m; sourceTree = "<group>"; };
+		A6815BA19A4AFD8FE233413C /* CSVWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSVWriter.m; sourceTree = "<group>"; };
+		A6815FC6B36F44910B337499 /* CSVReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSVReader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +81,8 @@
 			children = (
 				2B0C64D01E1673B30063AEA9 /* CSVTool.h */,
 				2B0C64D11E1673B30063AEA9 /* Info.plist */,
+				A6815652AE794C0C279FB086 /* Reader */,
+				A681597C6DDC9B93D19C1B9A /* Writer */,
 			);
 			path = CSVTool;
 			sourceTree = "<group>";
@@ -86,6 +96,24 @@
 			path = CSVToolTests;
 			sourceTree = "<group>";
 		};
+		A6815652AE794C0C279FB086 /* Reader */ = {
+			isa = PBXGroup;
+			children = (
+				A6815A49C7997880AC757F05 /* CSVReader.m */,
+				A6815FC6B36F44910B337499 /* CSVReader.h */,
+			);
+			path = Reader;
+			sourceTree = "<group>";
+		};
+		A681597C6DDC9B93D19C1B9A /* Writer */ = {
+			isa = PBXGroup;
+			children = (
+				A6815BA19A4AFD8FE233413C /* CSVWriter.m */,
+				A6815719A4ABFF425E523A91 /* CSVWriter.h */,
+			);
+			path = Writer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -94,6 +122,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B0C64DE1E1673B30063AEA9 /* CSVTool.h in Headers */,
+				A6815C33CC6DCCA0476B66F5 /* CSVWriter.h in Headers */,
+				A68150B9BE7C8326166227DB /* CSVReader.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +225,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A681539E1BC19F5A907E4E0C /* CSVWriter.m in Sources */,
+				A681558F37865A8E8E31C4AF /* CSVReader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
